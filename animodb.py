@@ -1,7 +1,7 @@
 import sqlite3
 import requests
 
-conn = sqlite3.connect("anime.db")
+conn = sqlite3.connect("anime_ls.db")
 cursor = conn.cursor()
 
 cursor.execute('''
