@@ -1,7 +1,6 @@
 import sqlite3
 import requests
 
-# สร้างฐานข้อมูลและตาราง
 conn = sqlite3.connect("anime.db")
 cursor = conn.cursor()
 
@@ -20,7 +19,6 @@ CREATE TABLE IF NOT EXISTS anime (
 ''')
 conn.commit()
 
-# GraphQL Query
 query = '''
 query ($page: Int, $perPage: Int) {
   Page(page: $page, perPage: $perPage) {
